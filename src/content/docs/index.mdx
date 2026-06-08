@@ -1,0 +1,41 @@
+---
+title: Подготовка к экзамену по Java Spring
+description: Развёрнутые конспекты-ответы на 40 экзаменационных вопросов со ссылками на лекции.
+template: splash
+hero:
+  tagline: 40 вопросов · 3 блока · развёрнутые конспекты со ссылками на лекции
+  actions:
+    - text: Список вопросов
+      link: /questions/
+      icon: right-arrow
+    - text: Начать с Блока 1
+      link: /block-1/01-frameworks/
+      icon: open-book
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Как пользоваться
+
+Каждый вопрос экзамена — отдельная страница с развёрнутым ответом по всем подпунктам,
+примерами кода и блоком **«Материалы»** со ссылками на соответствующие лекции-лонгриды.
+
+<CardGrid stagger>
+	<Card title="Блок 1. Spring Core & Web" icon="puzzle">
+		IoC/DI, бины, AOP, конфигурирование, Spring MVC, контроллеры, обработка ошибок,
+		OpenAPI, логирование, тестирование. [18 вопросов →](/block-1/01-frameworks/)
+	</Card>
+	<Card title="Блок 2. Persistence & Security" icon="seti:db">
+		JDBC, транзакции, миграции, JPA/Hibernate, Spring Data, Security/JWT, RestClient,
+		Resilience4j. [13 вопросов →](/block-2/01-jdbc/)
+	</Card>
+	<Card title="Блок 3. Reactive, Kafka, Monitoring" icon="rocket">
+		Project Reactor, WebFlux, R2DBC, реактивные транзакции, Kafka, метрики и
+		мониторинг. [9 вопросов →](/block-3/01-reactor/)
+	</Card>
+	<Card title="Лекции (лонгриды)" icon="document">
+		15 подробных конспектов лекций — первоисточник для ответов.
+		[Открыть →](/longreads/01-spring-intro/)
+	</Card>
+</CardGrid>
