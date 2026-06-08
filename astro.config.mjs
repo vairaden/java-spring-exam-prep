@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://vairaden.github.io/java-spring-exam-prep',
+	base: '/java-spring-exam-prep',
 	integrations: [
 		starlight({
 			title: 'Java Spring — подготовка к экзамену',
